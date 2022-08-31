@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="situazioneCorsi.aspx.cs" Inherits="situazioneCorsi" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="preparazioneDomande.aspx.cs" Inherits="preparazioneDomande" %>
 
 <!DOCTYPE html>
 
@@ -10,7 +10,6 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:GridView ID="GridCorsi" runat="server" OnSelectedIndexChanged="GridCorsi_SelectedIndexChanged"></asp:GridView>
         </div>
     </form>
 </body>
