@@ -9,7 +9,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <p>
             <%--info studente--%>
 
             <%-- foto profilo, nome, cognome --%>
@@ -18,10 +18,11 @@
             <asp:Literal ID="ltlNome" runat="server"></asp:Literal>
             
             <asp:Literal ID="LtlCognome" runat="server"></asp:Literal>
-            
+            </p>
+        <p>
             <%-- storico corsi --%>
             <asp:GridView ID="grvCorsiStudenti" runat="server"></asp:GridView>
-        </div>
+        </p>
     </form>
 </body>
 </html>

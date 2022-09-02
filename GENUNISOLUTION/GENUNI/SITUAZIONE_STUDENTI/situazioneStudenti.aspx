@@ -9,10 +9,10 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <p>
         <%--gridview per tutti gli studenti con pulsante select--%>
             <asp:GridView ID="grvStudenti" runat="server" AutoGenerateSelectButton="True" OnSelectedIndexChanged="grvStudenti_SelectedIndexChanged"></asp:GridView>
-        </div>
+        </p>
     </form>
 </body>
 </html>

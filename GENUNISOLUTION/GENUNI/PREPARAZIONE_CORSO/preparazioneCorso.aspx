@@ -59,64 +59,68 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <p>
+        <table>
+            <tr>
+                <td>
+                    <%--dublica corso--%>
+                    <asp:Label ID="Label6" runat="server" Text="Scegliere un corso da duplicare: "></asp:Label>
+                    <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                    <asp:Button ID="Button4" runat="server" Text="Duplica" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label1" runat="server" Text="----------OPPURE----------"></asp:Label>
+                </td>
+                </tr>
+            <tr>
+                <td>
+                    <%--titolo--%>
+                    <asp:Label ID="lblTitolo" runat="server" Text="Titolo:"></asp:Label>
+                    <asp:TextBox ID="txtTitolo" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <%--tipo--%>
+                    <asp:Label ID="lblTipo" runat="server" Text="Tipo: "></asp:Label>
+                    <asp:TextBox ID="txtTipo" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <%--descrizione--%>
+                    <asp:Label ID="lblDescrizione" runat="server" Text="Descrizione: "></asp:Label>
+                    <asp:TextBox ID="txtDescrizione" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <%--data di partenza--%>
+                    <asp:Label ID="lblDataDiPartenza" runat="server" Text="Data di partenza: "></asp:Label>
+                    <asp:TextBox ID="txtDataDiPartenza" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <%--scelta dell' avatar del corso (formato estratto dal bottone "aggiungi corso")--%>
+                    <asp:Label ID="lblAvatar" runat="server" Text="Immagine Profilo: "></asp:Label>
+                    <asp:FileUpload ID="UploadAvatar" runat="server" />
+                </td>
+            </tr>
+            <tr></tr>
+        </table>
+    </p>
+    <p>
+        <%--bottone scelta docenti--%>
+        <asp:Button Class="popupAssegnazioniDocenti" ID="btnAssegnazioneDocenti" runat="server" Text="Assegna docenti" />
 
-    <table>
-        <tr>
-            <td>
-                <%--dublica corso--%>
-                <asp:Label ID="Label6" runat="server" Text="Scegliere un corso da duplicare: "></asp:Label>
+        <%--bottone scelta materie--%>
+        <asp:Button Class="popupDefinizioneMaterie" ID="btnDefinizioneMateria" runat="server" Text="Definisci materie" />
 
-                <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
-                <asp:Button ID="Button4" runat="server" Text="Duplica" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <%--titolo--%>
-                <asp:Label ID="lblTitolo" runat="server" Text="Titolo:"></asp:Label>
-            </td>
-            <td>
-                <asp:TextBox ID="txtTitolo" runat="server" ></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <%--tipo--%>
-                <asp:Label ID="lblTipo" runat="server" Text="Tipo: "></asp:Label>
-                <asp:TextBox ID="txtTipo" runat="server" ></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <%--descrizione--%>
-                <asp:Label ID="lblDescrizione" runat="server" Text="Descrizione: "></asp:Label>
-                <asp:TextBox ID="txtDescrizione" runat="server"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <%--data di partenza--%>
-                <asp:Label ID="lblDataDiPartenza" runat="server" Text="Data di partenza: "></asp:Label>
-                <asp:TextBox ID="txtDataDiPartenza" runat="server"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <%--scelta dell' avatar del corso (formato estratto dal bottone "aggiungi corso")--%>
-                <asp:Label ID="lblAvatar" runat="server" Text="Immagine Profilo: "></asp:Label>
-                <asp:FileUpload ID="UploadAvatar" runat="server" />
-            </td>
-        </tr>
-        <tr></tr>
-    </table>
-
-    <%--bottone scelta docenti--%>
-    <asp:Button Class="popupAssegnazioniDocenti" ID="btnAssegnazioneDocenti" runat="server" Text="Assegna docenti" />
-
-    <%--bottone scelta materie--%>
-    <asp:Button Class="popupDefinizioneMaterie" ID="btnDefinizioneMateria" runat="server" Text="Definisci materie" />
-
-    <%--bottone inserisci corso--%>
-    <asp:Button ID="btnInserisciCorso" runat="server" Text="Aggiungi corso" />
+        <%--bottone inserisci corso--%>
+        <asp:Button ID="btnInserisciCorso" runat="server" Text="Aggiungi corso" />
+    </p>
 </asp:Content>
 

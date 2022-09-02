@@ -9,11 +9,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <p>
 
             <%--risultati dei test per l' intero corso--%>
             <asp:GridView ID="grvRisulati" runat="server"></asp:GridView>
-        </div>
+        </p>
     </form>
 </body>
 </html>

@@ -9,10 +9,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <%--popup--%>
-            <%--domande--%>
-            <asp:Label ID="Label1" runat="server" Text="INSERISCI NUOVA DOMANDA"></asp:Label>
+        <div<p>
             <%--DOMANDA--%>
             <asp:Label ID="Label2" runat="server" Text="Inserire il quesito: "></asp:Label>
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
@@ -25,7 +22,7 @@
             <%--risposta sbagliata -1--%>
             <asp:Label ID="Label5" runat="server" Text="Risposta errata: "></asp:Label>
             <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
-
+            </p>
             <asp:Button ID="Button1" runat="server" Text="Aggiungi quesito" />
         </div>
     </form>
