@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="situazioneStudenti.aspx.cs" Inherits="situazioneStudenti" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="cronistoriaDocenti3.aspx.cs" Inherits="PREPARAZIONE_CORSO_cronistoriaDocenti3" %>
 
 <!DOCTYPE html>
 
@@ -10,20 +10,21 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <%--elenco studenti con carosel simile a asssegnazioneDocenti--%>
-
-            <%--più info sullo studente selezionato--%>
+                                 <p>flamengo</p>
             <%--label per nome e cognome--%>
             <asp:Literal ID="Literal1" runat="server"></asp:Literal>
 
                 <%-- foto profilo --%>
             <asp:Image ID="Image1" runat="server" />
 
-                <%-- corsi in corso --%>
+                <%-- cv --%>
             <asp:Literal ID="Literal2" runat="server"></asp:Literal>
 
-                <%-- storico corsi --%>
+                <%-- skills --%>
             <asp:Literal ID="Literal3" runat="server"></asp:Literal>
+
+            <%-- corsi precedenti con classe --%>
+            <asp:GridView ID="GridView1" runat="server"></asp:GridView>
         </div>
     </form>
 </body>
